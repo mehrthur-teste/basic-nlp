@@ -1,0 +1,57 @@
+pedido,sql
+liste todos os clientes,SELECT * FROM customer;
+mostre os clientes cadastrados,SELECT * FROM customer;
+quero ver a lista de clientes,SELECT * FROM customer;
+consulte a tabela customer,SELECT * FROM customer;
+exiba todos os consumidores,SELECT * FROM customer;
+liste todos os preços,SELECT * FROM price;
+mostre os valores dos produtos,SELECT * FROM price;
+quero consultar a tabela price,SELECT * FROM price;
+exiba todas as compras,SELECT * FROM price;
+quais são os preços cadastrados,SELECT * FROM price;
+quantos clientes existem,SELECT COUNT(*) AS total_clientes FROM customer;
+conte os clientes cadastrados,SELECT COUNT(*) AS total_clientes FROM customer;
+qual a quantidade de clientes,SELECT COUNT(*) AS total_clientes FROM customer;
+numero total de clientes,SELECT COUNT(*) AS total_clientes FROM customer;
+quero saber quantos consumidores temos,SELECT COUNT(*) AS total_clientes FROM customer;
+qual a média dos preços,SELECT AVG(amount) AS media_precos FROM price;
+calcule o preço médio,SELECT AVG(amount) AS media_precos FROM price;
+valor médio das compras,SELECT AVG(amount) AS media_precos FROM price;
+mostre a média dos valores dos produtos,SELECT AVG(amount) AS media_precos FROM price;
+em média quanto custa um produto,SELECT AVG(amount) AS media_precos FROM price;
+qual a soma de todos os preços,SELECT SUM(amount) AS total FROM price;
+total gasto nas compras,SELECT SUM(amount) AS total FROM price;
+some os valores das compras,SELECT SUM(amount) AS total FROM price;
+quanto foi gasto ao todo,SELECT SUM(amount) AS total FROM price;
+valor total vendido,SELECT SUM(amount) AS total FROM price;
+qual o maior preço,SELECT MAX(amount) AS maior_preco FROM price;
+mostre o valor mais alto,SELECT MAX(amount) AS maior_preco FROM price;
+quanto custa o produto mais caro,SELECT MAX(amount) AS maior_preco FROM price;
+preço máximo das compras,SELECT MAX(amount) AS maior_preco FROM price;
+maior valor de compra,SELECT MAX(amount) AS maior_preco FROM price;
+qual o menor preço,SELECT MIN(amount) AS menor_preco FROM price;
+mostre o valor mais baixo,SELECT MIN(amount) AS menor_preco FROM price;
+quanto custa o produto mais barato,SELECT MIN(amount) AS menor_preco FROM price;
+preço mínimo das compras,SELECT MIN(amount) AS menor_preco FROM price;
+menor valor de compra,SELECT MIN(amount) AS menor_preco FROM price;
+total de compras por cliente,"SELECT c.id, c.name, SUM(p.amount) AS total FROM customer AS c JOIN price AS p ON p.customer_id = c.id GROUP BY c.id, c.name;"
+quanto cada cliente gastou,"SELECT c.id, c.name, SUM(p.amount) AS total FROM customer AS c JOIN price AS p ON p.customer_id = c.id GROUP BY c.id, c.name;"
+some os valores por consumidor,"SELECT c.id, c.name, SUM(p.amount) AS total FROM customer AS c JOIN price AS p ON p.customer_id = c.id GROUP BY c.id, c.name;"
+gastos de cada cliente,"SELECT c.id, c.name, SUM(p.amount) AS total FROM customer AS c JOIN price AS p ON p.customer_id = c.id GROUP BY c.id, c.name;"
+mostre o total gasto por pessoa,"SELECT c.id, c.name, SUM(p.amount) AS total FROM customer AS c JOIN price AS p ON p.customer_id = c.id GROUP BY c.id, c.name;"
+quero o total gasto por todos os clientes,SELECT SUM(amount) AS total FROM price;
+qual o total que todos os clientes gastaram juntos,SELECT SUM(amount) AS total FROM price;
+soma das compras de todos os clientes,SELECT SUM(amount) AS total FROM price;
+quanto os clientes gastaram no total,SELECT SUM(amount) AS total FROM price;
+total geral gasto pelos clientes,SELECT SUM(amount) AS total FROM price;
+valor gasto por todos os consumidores juntos,SELECT SUM(amount) AS total FROM price;
+quero o total gasto por cada cliente,"SELECT c.id, c.name, SUM(p.amount) AS total FROM customer AS c JOIN price AS p ON p.customer_id = c.id GROUP BY c.id, c.name;"
+mostre quanto gastou cada um dos clientes,"SELECT c.id, c.name, SUM(p.amount) AS total FROM customer AS c JOIN price AS p ON p.customer_id = c.id GROUP BY c.id, c.name;"
+total gasto separado por cliente,"SELECT c.id, c.name, SUM(p.amount) AS total FROM customer AS c JOIN price AS p ON p.customer_id = c.id GROUP BY c.id, c.name;"
+listar clientes com seus respectivos gastos,"SELECT c.id, c.name, SUM(p.amount) AS total FROM customer AS c JOIN price AS p ON p.customer_id = c.id GROUP BY c.id, c.name;"
+quanto cada consumidor comprou no total,"SELECT c.id, c.name, SUM(p.amount) AS total FROM customer AS c JOIN price AS p ON p.customer_id = c.id GROUP BY c.id, c.name;"
+mostre o total gasto por cada cliente,"SELECT c.id, c.name, SUM(p.amount) AS total FROM customer AS c JOIN price AS p ON p.customer_id = c.id GROUP BY c.id, c.name;"
+gastos,SELECT SUM(amount) AS total FROM price;
+total gasto,SELECT SUM(amount) AS total FROM price;
+soma dos gastos,SELECT SUM(amount) AS total FROM price;
+gastos totais,SELECT SUM(amount) AS total FROM price;
